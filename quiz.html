@@ -4,36 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Triangle Quiz</title>
   </head>
   <body>
+    <nav class="navigation">
+      <a href="./index.html">Is Triangle?</a>
+      <a href="#" class="active">Quiz</a>
+      <a href="./hypotenuse.html">Hypotenuse</a>
+      <a href="./area.html">Area</a>
+    </nav>
     <h1>Triangle Quiz</h1>
     <form id="quiz">
-      <div class="container">
-        <p>
+      <div class="container-quiz">
+        <p class="quiz-p">
           What will the 3rd angle be when angle 1 and 2 are 45°?
+        </p>
+        <div class="op-container">
           <input type="radio" name="q1" value="45°" id="q1-op1" />
           <label for="q1-op1">45°</label>
           <input type="radio" name="q1" value="60°" id="q1-op2" />
           <label for="q1-op2">60°</label>
           <input type="radio" name="q1" value="90°" id="q1-op3" />
           <label for="q1-op3">90°</label>
-        </p>
+        </div>
       </div>
-      <div class="container">
-        <p>
+      <div class="container-quiz">
+        <p class="quiz-p">
           What do you call a triangle which has 90° as one of it's angles?
+        </p>
+        <div class="op-container">
           <input type="radio" name="q2" value="acute" id="q2-op1" />
           <label for="q2-op1">acute</label>
           <input type="radio" name="q2" value="obtuse" id="q2-op2" />
           <label for="q2-op2">obtuse</label>
           <input type="radio" name="q2" value="right angled" id="q2-op3" />
           <label for="q2-op3">right angled</label>
-        </p>
+        </div>
       </div>
     </form>
-    <button id="submit">Submit</button>
-    <p id="output"></p>
+    <button id="submit-quiz">Submit</button>
+    <p id="output-quiz"></p>
   </body>
   <script src="./quiz.js"></script>
 </html>

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --primary: #003049;
+  --text-color: #d62828;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary);
+  color: var(--text-color);
+}
+nav {
+  background-color: var(--text-color);
+  color: var(--primary);
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  border-bottom-left-radius: 1.5rem;
+}
+a:link {
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: medium;
+  color: var(--primary);
+}
+a:visited {
+  color: var(--primary);
+}
+
+input,
+label {
+  display: block;
+}
+.container {
+  width: 25%;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+label {
+  margin-bottom: 0.3rem;
+}
+input {
+  width: 90%;
+  margin-bottom: 1rem;
+  height: 1.5rem;
+  border-radius: 0.2rem;
+
+  padding: 0 0.5rem;
+}
+button {
+  padding: 0.5rem 2rem;
+  display: block;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  border-width: 1.5px;
+
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  color: var(--primary);
+}
+.navigation .active {
+  text-decoration: underline;
+  font-size: large;
+  font-weight: bolder;
+}
+.container-quiz {
+  width: 35%;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.quiz-p {
+  margin-bottom: 1.5rem;
+}
+.op-container input {
+  width: 5%;
+  margin: 0 0.5rem;
+}
+.op-container input,
+.op-container label {
+  display: inline-block;
+}
+.op-container label {
+  margin-bottom: 0;
+}
+#output-quiz {
+  width: 50%;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+#submit-quiz {
+  margin-top: 2rem;
+}
