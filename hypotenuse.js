@@ -5,10 +5,12 @@ const output = document.querySelector("#output");
 calculateHypotenuse.addEventListener("click", () => {
   const angle1 = Number(inputAngle1.value);
   const angle2 = Number(inputAngle2.value);
-  if (angle1 <= 0 || angle2 <= 0) {
+  if (inputAngle1.value === "" || inputAngle2.value === "") {
+    output.innerText = "Please enter data into all the fieds";
+  } else if (angle1 <= 0 || angle2 <= 0) {
     output.innerText = "Length of the sides should be greater than 0";
   } else {
-    const hypotenuse = Math.sqrt(angle1 ** 2 + angle2 ** 2);
+    const hypotenuse = Math.sqrt(angle1 ** 2 + angle2 ** 2).toFixed(2);
     output.innerText = "Length of the hypotenuse is " + hypotenuse;
   }
 });

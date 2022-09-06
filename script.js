@@ -8,7 +8,13 @@ buttonIsTriangle.addEventListener("click", () => {
   const angle1 = Number(inputAngle1.value);
   const angle2 = Number(inputAngle2.value);
   const angle3 = Number(inputAngle3.value);
-  if (angle1 <= 0 || angle2 <= 0 || angle3 <= 0) {
+  if (
+    inputAngle1.value === "" ||
+    inputAngle2.value === "" ||
+    inputAngle3.value === ""
+  ) {
+    printMessage("Please enter data into all the fields");
+  } else if (angle1 <= 0 || angle2 <= 0 || angle3 <= 0) {
     printMessage("Angles should be greater than 0");
   } else {
     sum = angle1 + angle2 + angle3;

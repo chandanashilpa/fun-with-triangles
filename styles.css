@@ -103,3 +103,15 @@ button {
 #submit-quiz {
   margin-top: 2rem;
 }
+.op-container {
+  display: flex;
+  gap: 1rem;
+}
+.holder {
+  display: flex;
+
+  justify-items: center;
+}
+.holder input {
+  width: 1.2rem;
+}

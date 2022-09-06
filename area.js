@@ -5,7 +5,9 @@ const output = document.querySelector("#output");
 calculateArea.addEventListener("click", () => {
   const base = Number(inputBase.value);
   const height = Number(inputHeight.value);
-  if (base <= 0 || height <= 0) {
+  if (inputBase.value === "" || inputHeight.value === "") {
+    output.innerText = "Please enter data into all the fieds";
+  } else if (base <= 0 || height <= 0) {
     output.innerText = "Base and height should be greater than 0";
   } else {
     const area = 0.5 * base * height;
