@@ -1,7 +1,15 @@
 const quizForm = document.querySelector("#quiz");
 const submit = document.querySelector("#submit-quiz");
 const output = document.querySelector("#output-quiz");
-const answers = ["90°", "right angled"];
+const answers = [
+  "90°",
+  "right angled",
+  "equilateral",
+  "midsegment",
+  "orthocenter",
+  "centroid",
+  "altitude",
+];
 
 submit.addEventListener("click", () => {
   const quizFormData = new FormData(quizForm);
@@ -14,4 +22,5 @@ submit.addEventListener("click", () => {
     index += 1;
   }
   output.innerText = "Your score is " + score;
+  window.scrollTo(0, document.body.scrollHeight);
 });
